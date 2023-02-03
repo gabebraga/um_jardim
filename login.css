@@ -5,15 +5,19 @@ body{
     background-color: white;
     font-family: Bekinder;
 }
-.hr{
-    float: left;
-    margin-left: 7.5%;
+.sec{
+    width: 100%;
+    display: block;
 }
 .b{
     float: left;
     width: 20%;
     margin-top: 1%;
     margin-left: 20%;
+}
+.hr{
+    float: left;
+    margin-left: 7.5%;
 }
 .c{
     float: right;

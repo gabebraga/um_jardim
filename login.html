@@ -13,14 +13,18 @@
 <body>
     <header>
         <section class="header">
-            <div id="logo"><p>UM JARDIM</p></div>
+            <div id="logo"><h1>UM JARDIM</h1></div>
             <div class="pesquisa">
-                <img src="lupa.png" id="lupa">
-                <input type="search" id="pesquisa" placeholder="pesquise no site">
-            </div>
-            <div id="login"><img src="login.png" id="login"></div>
-        </section>
-    </header>
+                <input type="search" id="pesquisa" placeholder="Pesquise no site"></div>
+                <div id="login"><img src="fotos/login.png" id="login"></div>
+            </section>
+            <section class="menu-nav">
+                <div class="menu-item" >Categoria</div>
+                <div class="menu-item">Categoria</div>
+                <div class="menu-item">Categoria</div>
+                <div class="menu-item">Categoria</div>
+            </section>
+        </header>
     <form action="" name="data" onsubmit="return validar()">
     <table class="b">
         <tr>
@@ -42,6 +46,7 @@
     </table>
     </form>
     <hr class="hr" width="1" size="500">
+    <section class="sec">
     <form method="post" action="enviar.php" name="cadastro">
     <table class="c">
         <tr>
@@ -85,23 +90,14 @@
         </tr>
     </table>
     </form>
-    <footer class="rodapé">
-        <br>
-                <div class="icons">
-                <p>Siga A UM JARDIM:</p>
-                <img src="https://cdn3.iconfinder.com/data/icons/feather-5/24/power-512.png" width="30px" class="img">
-                <img src="https://cdn3.iconfinder.com/data/icons/feather-5/24/user-check-512.png" width="31px" class="img">
-                <img src="https://cdn3.iconfinder.com/data/icons/feather-5/24/wifi-512.png" width="31px" class="img">
-                </div>
-                <div id="dentro">
-                <div class="contatos"><p>(11) 4002-8922</p>
-                  <img src="https://cdn3.iconfinder.com/data/icons/feather-5/24/phone-512.png" width="35px" class="img">
-                </div>
-                    <div class="direitos">
-                      <p class="text-muted mb-0 py-2">©2023 UM JARDIM - Todos Os Direitos São Reservados.</p>
-                    </div>
-                  </div>
-                </div>
-              </footer>
+</section>
+     <footer class="rodapé">
+        <p class="footer-txt">Siga a UM JARDIM</p>
+        <div class="all-icons">
+            <img src="https://cdn3.iconfinder.com/data/icons/free-social-icons/67/instagram_circle_gray-256.png" class="icon">
+            <img src="https://cdn3.iconfinder.com/data/icons/free-social-icons/67/twitter_circle_gray-256.png" class="icon">
+            <img src="https://cdn3.iconfinder.com/data/icons/free-social-icons/67/facebook_circle_gray-256.png" class="icon">
+        </div>
+    </footer>
 </body>
 </html>

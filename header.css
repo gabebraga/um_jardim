@@ -1,37 +1,48 @@
-header{
-    background-color: #38592d;
-    height: 200px;
+header {
+    margin-bottom: 8px;
 }
 
-#logo{
+.header {
+    background-color: #ffffff;
+    height: 134px;
+    width: 100%;
+}
+#logo {
     float: left;
-    font-size: 40px;
-    margin-left: 50px;
-    margin-top: 65px;
-    margin-right: 115px;;
+    font-size: 54px;
+    margin: 36px;
     font-family: prata;
-    color: white;
+    color: #4e6946;
 }
-
-#lupa {
-    width: 70px;
-    height: 70px;
-    float: left;
-    margin-left: 20px;
-    margin-top: 54px ;
-  }
-#pesquisa{
+#pesquisa {
     float: left;
     width: 450px;
-    height: 30px;
-    margin-top: 75px;
-    background-color: white;
+    height: 36px;
+    margin: 45px;
+    border-style: groove;
+    border-width: 2px;
+    border-color: #80b571;
     border-radius: 30px;
-    padding-left: 5px;
+    padding-left: 15px;
+    color: rgb(184, 184, 184);
 }
-#login{
+#login {
     float: right;
-    margin-top:25px;
-    margin-right: 35px;
-    width: 55px;
+    margin: 17px 25px 17px 20px;
+    width: 56px;
+}
+.menu-nav {
+    width: 100%;
+    background-color: #4e6946;
+    height: 30px;
+    box-sizing: border-box;
+    padding: 5px;
+    text-align: center;
+}
+.menu-item {
+    display: inline;
+    width: 10%;
+    height: 100%;
+    color: rgb(255, 255, 255);
+    margin: 5px;
 }

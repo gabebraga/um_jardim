@@ -1,39 +1,21 @@
-.rodapé{
-    padding: 0%;
-    margin-top: 40%;
+footer {
+    margin: 0%;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
-.icons{
-    background-color:white;
+.rodapé {
+    background-color: #839b83;
+    padding-block: 40px;
+}
+.footer-txt {
     text-align: center;
-    padding-left:5px;
+    color: #c6c5bf;
 }
-.direitos{
+.icon {
+    width: 30px;
+}
+.all-icons {
     text-align: center;
-    color:#494747;
-    padding:5px;
-}
-img{
-    border:5px thin black;
-    border-radius:20px;
-}
-.caixa1{
-    text-align: center;
-    float: left;
-    padding-left:550px;
-}
-.caixa2{
-    text-align: center;
-    float: left;
-    padding-left:50px;
-}
-.caixas{
-    text-align: center;
-    display: flex;
-}
-#dentro{
-    background-color:#839B83;
-}
-.contatos{
-    text-align:right;
-    color:#494747;
+    margin-top: 5px;
 }
