@@ -5,44 +5,37 @@ body{
     background-color: white;
     font-family: Bekinder;
 }
-.sec{
+.all_forms{
+    display: flex;
     width: 100%;
-    display: block;
+    margin-left: 18.5%;
+    margin-top: 5%;
+    margin-bottom: 10%;
 }
 .b{
-    float: left;
-    width: 20%;
-    margin-top: 1%;
-    margin-left: 20%;
+    box-sizing: flex;
+    display: inline-block;
 }
 .hr{
-    float: left;
-    margin-left: 7.5%;
-}
-.c{
-    float: right;
-    width: 20%;
-    margin-top: 1%;
+    box-sizing: border-box;
+    display: flex;
+    margin-left: 20%;
     margin-right: 20%;
 }
 .m1{
+    font-size: 200%;
     color: #4E6946;
 }
 .m3{
     height: 20px;
+    border-radius: 15px;
+    border-color: transparent;
+    background-color: #EDECE3;
     width: 100%;
 }
 .m4{
     margin-top: 3%;
     color: white;
-}
-input{
-    border-radius: 15px;
-    border-color: transparent;
-    width: 100%;
-    background-color: #EDECE3;
-}
-button{
     width: 65%;
     height: 55%;
     border-radius: 30px;

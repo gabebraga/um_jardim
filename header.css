@@ -1,11 +1,13 @@
 header {
     margin-bottom: 8px;
+    width: 100%;
 }
 
 .header {
     background-color: #ffffff;
     height: 134px;
     width: 100%;
+    position: relative;
 }
 #logo {
     float: left;
