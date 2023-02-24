@@ -1,50 +1,56 @@
-header {
-    margin-bottom: 8px;
-    width: 100%;
+*{
+    margin: 0;
 }
-
 .header {
     background-color: #ffffff;
     height: 134px;
     width: 100%;
-    position: relative;
+    display: block;
+    text-align: center;
 }
-#logo {
-    float: left;
-    font-size: 54px;
-    margin: 36px;
-    font-family: prata;
-    color: #4e6946;
+
+
+#logo-img{
+    width: 8%;
+    height: 75%;
+    display: inline;
+    box-sizing: border-box;
 }
-#pesquisa {
-    float: left;
-    width: 450px;
-    height: 36px;
-    margin: 45px;
-    border-style: groove;
-    border-width: 2px;
-    border-color: #80b571;
+
+#pesquisa{
+    width: 35%;
+    height: 30%;
+    text-align: center;
     border-radius: 30px;
-    padding-left: 15px;
+    border-color: #80b571;
+    border-style: groove;
     color: rgb(184, 184, 184);
+    border-width: 2px;
 }
-#login {
-    float: right;
-    margin: 17px 25px 17px 20px;
-    width: 56px;
+
+
+#login-img{
+    width: 5%;
+    height: 50%;
 }
+
+
 .menu-nav {
     width: 100%;
     background-color: #4e6946;
     height: 30px;
     box-sizing: border-box;
     padding: 5px;
+    display: block;
     text-align: center;
+    margin-top: 0;
+    
 }
 .menu-item {
-    display: inline;
+    display: inline-block;
     width: 10%;
     height: 100%;
     color: rgb(255, 255, 255);
-    margin: 5px;
+    padding-left: 5%;
+    padding-right: 5%;
 }

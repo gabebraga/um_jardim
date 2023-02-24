@@ -3,41 +3,34 @@
 }
 body{
     background-color: white;
-    font-family: Bekinder;
+    font-family: Bekinder; 
 }
 .all_forms{
-    display: flex;
-    width: 100%;
-    margin-left: 18.5%;
     margin-top: 5%;
-    margin-bottom: 10%;
+    margin-bottom: 5%;
+    margin-left: 40%;
+    width: 20%;
 }
 .b{
-    box-sizing: flex;
-    display: inline-block;
-}
-.hr{
-    box-sizing: border-box;
-    display: flex;
-    margin-left: 20%;
-    margin-right: 20%;
+    box-sizing: block;
 }
 .m1{
     font-size: 200%;
     color: #4E6946;
 }
 .m3{
-    height: 20px;
+    height: 30px;
     border-radius: 15px;
     border-color: transparent;
     background-color: #EDECE3;
     width: 100%;
 }
 .m4{
+    font-size: 150%;
     margin-top: 3%;
     color: white;
-    width: 65%;
-    height: 55%;
+    width: 40%;
+    height: 30px;
     border-radius: 30px;
     background-color:#4E6946;
     border-color: transparent;
