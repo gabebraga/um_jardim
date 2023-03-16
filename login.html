@@ -5,29 +5,67 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="teste.css">
     <link rel="stylesheet" href="login.css">
     <link rel="stylesheet" href="footer.css">
     <script src="login.js"></script>
 </head>
 <body>
     <header>
-        <section class="header">
-            <!-- <div id="logo">
-            </div> -->
-            <img src="pi fotos/logo.png" id="logo-img">
-            <!-- <div class="pesquisa">
-            </div> -->
-            <input type="search" id="pesquisa" placeholder="Pesquise no site">
-            <!-- <div class="login">
-            </div> -->
-            <img src="pi fotos/login.png" id="login-img">
+
+        <section id="header">
+            <img src="pi fotos/logo.png" class="logo" alt="">
+
+
+            <input type="search" class="pesquisa" placeholder="Pesquise no site">
+
+
+            <div id="login">
+                <div class="dropdown">
+                    <img onclick="myFunction()" class="dropbtn" src="fotos/login.png" alt="" id="img-login"
+                        class="login">
+                    <div id="myDropdown" class="dropdown-content">
+                        <form action="">
+                            <input type="email" id="inputName" placeholder="Insira seu email">
+                            <input type="password" id="inputSenha" placeholder="Insira sua senha"> <br>
+                            <button value="submit" id="buttonEntrar">Entrar :)</button>
+                        </form>
+                        ou
+                        <a href="login.html">Faça Seu Cadastro :)</a>
+                    </div>
+                </div>
+                <script src="botao.js"></script>
+
         </section>
+
         <section class="menu-nav">
-                <div class="menu-item" >Categoria</div>
+            <div class="menuDeNavegação">
                 <div class="menu-item">Categoria</div>
                 <div class="menu-item">Categoria</div>
                 <div class="menu-item">Categoria</div>
+                <div class="menu-item">Categoria</div>
+            </div>
+                
+            <section class="sidebar-all">
+                <div id="mySidepanel" class="sidepanel">
+                    <img src="fotos/login2.png" class="login2" alt="">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <form action="">
+                        <table>
+                            <input type="email" placeholder="Insira seu email" class="input-sidebar">
+                            <input type="password" placeholder="Insira sua senha" class="input-sidebar">
+                            <button value="submit" class="button-sidebar">Entrar :)</button>
+                        </table>
+                    </form>
+                    <button id="cadastro-sidebar">
+                        <a href="login.html">Cadastre-se</a>
+                    </button>
+                </div>
+                <div>
+                    <button class="openbtn" onclick="openNav()">&#9776; </button>
+                </div>
+                <script src="botao.js"></script>
+            </section>
         </section>
     </header>
 <section class="all_forms">

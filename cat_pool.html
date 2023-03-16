@@ -10,59 +10,103 @@
     <title>Document</title>
 </head>
 <header>
-    <section class="header">
-        <img src="pi fotos/logo.png" id="logo-img">
-        <input type="search" id="pesquisa" placeholder="Pesquise no site">
-        <img src="pi fotos/login.png" id="login-img">
+
+    <section id="header">
+        <img src="fotos/logo1.png" class="logo" alt="">
+
+
+        <input type="search" class="pesquisa" placeholder="Pesquise no site">
+
+
+        <div id="login">
+            <div class="dropdown">
+                <img onclick="myFunction()" class="dropbtn" src="fotos/login.png" alt="" id="img-login"
+                    class="login">
+                <div id="myDropdown" class="dropdown-content">
+                    <form action="">
+                        <input type="email" id="inputName" placeholder="Insira seu email">
+                        <input type="password" id="inputSenha" placeholder="Insira sua senha"> <br>
+                        <button value="submit" id="buttonEntrar">Entrar :)</button>
+                    </form>
+                    ou
+                    <a href="login.html">Faça Seu Cadastro :)</a>
+                </div>
+            </div>
+            <script src="botao.js"></script>
+
     </section>
+
     <section class="menu-nav">
-            <div class="menu-item" >Categoria</div>
+        <div class="menuDeNavegação">
             <div class="menu-item">Categoria</div>
             <div class="menu-item">Categoria</div>
             <div class="menu-item">Categoria</div>
+            <div class="menu-item">Categoria</div>
+        </div>
+            
+        <section class="sidebar-all">
+            <div id="mySidepanel" class="sidepanel">
+                <img src="fotos/login2.png" class="login2" alt="">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <form action="">
+                    <table>
+                        <input type="email" placeholder="Insira seu email" class="input-sidebar">
+                        <input type="password" placeholder="Insira sua senha" class="input-sidebar">
+                        <button value="submit" class="button-sidebar">Entrar :)</button>
+                    </table>
+                </form>
+                <button id="cadastro-sidebar">
+                    <a href="login.html">Cadastre-se</a>
+                </button>
+            </div>
+            <div>
+                <button class="openbtn" onclick="openNav()">&#9776; </button>
+            </div>
+            <script src="botao.js"></script>
+        </section>
     </section>
 </header>
 <body>
     <header>
         <section id="sec_aprod">
             <div class="prod">
-                <img src="pi fotos/Bolsa de Ferramentas.png" alt="" class="img_prod">
-                <p class="title_prod"> Bolsa Para Ferramentas<p>
+                <img src="pi fotos/guarda sol 1.png" alt="" class="img_prod">
+                <p class="title_prod"> Guarda sol circular<p>
                 <p class="value_prod">R$: XX,XX</p>
                 <img src="pi fotos/avs.png" class="avs_prod">
                 <p class="id_prod">ID: 0000000</p>
             </div>
             <div class="prod">
-                <img src="pi fotos/Caixa de Ferramentas.png" alt="" class="img_prod">
-                <p class="title_prod"> Caixa de Ferramentas<p>
+                <img src="pi fotos/guarda sol 2.png" alt="" class="img_prod">
+                <p class="title_prod"> Guarda sol Coastway<p>
                 <p class="value_prod">R$: XX,XX</p>
                 <img src="pi fotos/avs.png" class="avs_prod">
                 <p class="id_prod">ID: 0000000</p>
             </div>
             <div class="prod">
-                <img src="pi fotos/Kit de Jardinagem.png" alt="" class="img_prod">
-                <p class="title_prod"> Kit de Jardinagem <p>
+                <img src="pi fotos/guarda sol 3.png" alt="" class="img_prod">
+                <p class="title_prod"> Guarda sol Coastway <p>
                 <p class="value_prod">R$: XX,XX</p>
                 <img src="pi fotos/avs.png" class="avs_prod">
                 <p class="id_prod">ID: 0000000</p>
             </div>
             <div class="prod">
-                <img src="pi fotos/Pá de Jardinagem.png" alt="" class="img_prod">
-                <p class="title_prod"> Pá de Jardinagem<p>
+                <img src="pi fotos/guarda sol 4.png" alt="" class="img_prod">
+                <p class="title_prod"> Guarda sol s/base<p>
                 <p class="value_prod">R$: XX,XX</p>
                 <img src="pi fotos/avs.png" class="avs_prod">
                 <p class="id_prod">ID: 0000000</p>
             </div>
             <div class="prod">
-                <img src="pi fotos/Pá Grande.png" alt="" class="img_prod">
-                <p class="title_prod"> Pá de Jardinagem Bungas<p>
+                <img src="pi fotos/guarda sol 5.png" alt="" class="img_prod">
+                <p class="title_prod"> Guarda sol 6 cadeiras<p>
                 <p class="value_prod">R$: XX,XX</p>
                 <img src="pi fotos/avs.png" class="avs_prod">
                 <p class="id_prod">ID: 0000000</p>
             </div>
             <div class="prod">
-                <img src="pi fotos/Tesoura.png" alt="" class="img_prod">
-                <p class="title_prod"> Tesoura de Poda<p>
+                <img src="pi fotos/guarda sol 6.png" alt="" class="img_prod">
+                <p class="title_prod"> Guarda sol 4 cadeiras<p>
                 <p class="value_prod">R$: XX,XX</p>
                 <img src="pi fotos/avs.png" class="avs_prod">
                 <p class="id_prod">ID: 0000000</p>

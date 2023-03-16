@@ -1,0 +1,266 @@
+@media screen and (min-width:414px) {
+    * {
+        box-sizing: border-box;
+        margin: 0;
+    }
+
+    #header {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        align-items: center;
+        height: 136px;
+    }
+
+    .logo {
+        width: 150px;
+    }
+
+    .login {
+        width: 5%;
+    }
+
+    .pesquisa {
+        width: 35%;
+        height: 36px;
+        border-style: groove;
+        border-width: 2px;
+        border-color: #80b571;
+        box-sizing: border-box;
+        padding-left: 10px;
+        background-color: rgb(241, 241, 241);
+        border-radius: 3px;
+    }
+
+    /* menu de navegação */
+    .menuDeNavegação {
+        display: block;
+        width: 100%;
+        background-color: #4e6946;
+        color: white;
+        font-weight: bold;
+        height: 30px;
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .sidebar-all {
+        display: none;
+    }
+
+    /* Dropdown Button */
+    .dropbtn {
+        width: 100%;
+        border: none;
+        cursor: pointer;
+    }
+
+    /* Dropdown button on hover & focus */
+    .dropbtn:hover,
+    .dropbtn:focus {
+
+        border-radius: 40px;
+        /* background-color: green; */
+    }
+
+    /* The container <div> - needed to position the dropdown content */
+    .dropdown {
+        position: relative;
+        display: inline-block;
+        margin-right:45px;
+    }
+
+    /* Dropdown Content (Hidden by Default) */
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+        text-align: center;
+    }
+
+    /* Links inside the dropdown */
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {
+    display: block;
+}
+
+#img-login {
+    width: 50px;
+}
+
+#inputName,
+#inputSenha,
+#buttonEntrar {
+    width: 80%;
+    height: 35px;
+    border-style: solid;
+    border-width: .5px;
+    border-radius: 3px;
+    border-color: rgb(202, 202, 202);
+    background-color: white;
+    font-size: 13px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+#inputName {
+    margin-top: 12px;
+}
+
+#inputSenha {
+    margin-bottom: 6px;
+}
+
+
+
+@media only screen and (max-width: 413px) {
+    * {
+        margin: 0;
+    }
+
+    #header {
+        flex-direction: column;
+        height: 200px;
+        text-align: center;
+    }
+
+    .logo {
+        width: 40%;
+    }
+
+    .pesquisa {
+        width: 80%;
+        height: 36px;
+        border-style: groove;
+        border-width: 2px;
+        border-color: #80b571;
+        box-sizing: border-box;
+        padding-left: 10px;
+        background-color: rgb(241, 241, 241);
+    }
+
+    #login {
+        display: none;
+    }
+
+    .menuDeNavegação {
+        display: none;
+    }
+
+    /* The sidepanel menu */
+    .sidepanel {
+        height: 100%;
+        /* Specify a height */
+        width: 0;
+        /* 0 width - change this with JavaScript */
+        position: fixed;
+        /* Stay in place */
+        z-index: 1;
+        /* Stay on top */
+        top: 0;
+        left: 0;
+        background-color: #4e6946;
+        /* Black*/
+        overflow-x: hidden;
+        /* Disable horizontal scroll */
+        /* padding-top: 60px; */
+        /* Place content 60px from the top */
+        transition: 0.5s;
+        /* 0.5 second transition effect to slide in the sidepanel */
+        text-align: center;
+    }
+
+    /* Position and style the close button (top right corner) */
+    /* .sidepanel */
+    .closebtn {
+        float: right;
+        position: absolute;
+        /* top: 0; */
+        /* right: 25px; */
+        font-size: 56px;
+        margin: 15px 22px;
+        text-decoration: none;
+        color: white;
+    }
+
+    /* Style the button that is used to open the sidepanel */
+    .openbtn {
+        font-size: 20px;
+        cursor: pointer;
+        background-color: #4e6946;
+        color: white;
+        padding: 10px 15px;
+        border: none;
+    }
+
+    .openbtn:hover {
+        background-color: #444;
+    }
+
+    .login2 {
+        margin-top: 35px;
+        width: 40%;
+    }
+
+    .input-sidebar {
+        width: 80%;
+        height: 35px;
+        border-style: solid;
+        border-width: .5px;
+        border-radius: 3px;
+        border-color: rgb(202, 202, 202);
+        background-color: white;
+        margin-top: 10px;
+        text-align: center;
+        font-size: 18px;
+    }
+
+    .button-sidebar {
+        border-style: none;
+        border-radius: 3px;
+        margin: 10px 0 20px 0;
+        width: 65%;
+        height: 28px;
+        font-size: 15px;
+        background-color: #7cad6e;
+    }
+
+    #cadastro-sidebar {
+        width: 80%;
+        background-color: white;
+        color: black;
+        transition: 0.3s;
+        text-align: center;
+        border-style: none;
+        height: 35px;
+        margin-top: 25px;
+        border-radius: 3px;
+    }
+
+    #cadastro-sidebar a {
+        text-decoration: none;
+        color: black;
+        font-size: 18px;
+    }
+
+    #cadastro-sidebar a:hover {
+        color: #313131;
+    }
+
+}
