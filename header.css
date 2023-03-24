@@ -49,6 +49,10 @@
         align-items: center;
     }
 
+    .menuDeNavegação a{
+        text-decoration: none;
+    }
+
     .sidebar-all {
         display: none;
     }
