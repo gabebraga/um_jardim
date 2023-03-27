@@ -1,3 +1,4 @@
+@media screen and (min-width:414px) {
 footer {
     margin: 0%;
     bottom: 0;
@@ -6,10 +7,16 @@ footer {
 .rodapé {
     background-color: #839b83;
     padding-block: 40px;
+    display: flex;
+    justify-content: space-around;
 }
 .footer-txt {
     text-align: center;
     color: #c6c5bf;
+}
+.footer-txt2{
+    text-align: center;
+    color: white;
 }
 .icon {
     width: 30px;
@@ -17,4 +24,39 @@ footer {
 .all-icons {
     text-align: center;
     margin-top: 5px;
+}
+.footer-box{
+    max-width: 200px;
+}
+}
+@media only screen and (max-width: 413px) {
+footer {
+    margin: 0%;
+    bottom: 0;
+    width: 100%;
+}
+.rodapé {
+    background-color: #839b83;
+    padding-block: 40px;
+    display: flex;
+    justify-content: space-around;
+}
+.footer-txt {
+    text-align: center;
+    color: #c6c5bf;
+}
+.footer-txt2{
+    text-align: center;
+    color: white;
+}
+.icon {
+    width: 30px;
+}
+.all-icons {
+    text-align: center;
+    margin-top: 5px;
+}
+.footer-box{
+    max-width: 100px;
+}
 }
