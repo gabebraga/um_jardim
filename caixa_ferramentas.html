@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="header.css">
+  <link rel="stylesheet" href="teste.css">
+  <link rel="stylesheet" href="pdp.css">
+  <link rel="stylesheet" href="footer.css">
+</head>
+
+<body>
+  <header>
+    <!-- Header Versão Desktop -->
+    <section id="header">
+        <a href="index.html"><img src="fotos/logo.png" class="logo" alt=""></a>
+
+
+        <input type="search" class="pesquisa" placeholder="Pesquise no site">
+
+
+        <div id="login">
+            <div class="dropdown">
+                <img onclick="myFunction()" class="dropbtn" src="fotos/login.png" alt="" id="img-login"
+                    class="login">
+                <div id="myDropdown" class="dropdown-content">
+                    <form action="">
+                        <input type="email" id="inputName" placeholder="Insira seu email">
+                        <input type="password" id="inputSenha" placeholder="Insira sua senha"> <br>
+                        <button value="submit" id="buttonEntrar">Entrar :)</button>
+                    </form>
+                    ou
+                    <a href="login.html">Faça Seu Cadastro :)</a>
+                </div>
+            </div>
+            <script src="botao.js"></script>
+    </section>
+    <!-- Menu de Navegação -->
+    <section class="menu-nav">
+        <!-- Menu de Navegação Versão Mobile -->
+        <div class="menuDeNavegação">
+            <a href="cat_cadeiras.html"><div class="menu-item">Cadeiras</div></a>
+            <a href="cat_mesas.html"><div class="menu-item">Mesas</div></a>
+            <a href="cat_plantas.html"><div class="menu-item">Plantas</div></a>
+            <a href="cat_pool.html"><div class="menu-item">Móveis p/ Piscina</div></a>
+            <a href="cat_tools.html"><div class="menu-item">Ferramentas</div></a>
+            <!-- <div class="menu-item">Categoria</div> -->
+        </div>
+        <!-- Barra Lateral Versão Mobile -->
+        <script src="header.js"></script>
+    </section>
+</header>
+
+  <!-- informações sobre o produto -->
+  <div class="informações-pdp">
+    <p class="titulo-pdp">Caixa de ferramentas para jardinagem</p>
+    <ul class="listaprodutos-pdp">
+      <li class="itemlista-pdp">Esse produto contém:</li>
+      <li class="itemlista-pdp">1 pá de jardinagem pequena</li>
+      <li class="itemlista-pdp">1 garfo para aeração de terra</li>
+      <li class="itemlista-pdp">1 tesoura de poda</li>
+      <li class="itemlista-pdp">1 escova para limpeza dos itens</li>
+    </ul>
+
+    <!-- informações de compra -->
+    <section class="compra-pdp">
+      <p id="preço-pdp">R$: XX,XX</p>
+      <div class="botaoQuantidade">
+        <input type="button" id="mais" value="+" onclick="more()">
+        <input type="text" id="numero" placeholder="quant">
+        <input type="button" id="menos" value="-" onclick="less()">
+      </div>
+      <input type="button" value="Produto Indisponível" id="botaoComprar-pdp">
+      <input type="text" placeholder="Insira seu CEP" class="numeroCEP-pdp">
+      <input type="button" value="Calcular Frete" id="botaoCEP-pdp">
+    </section>
+
+
+  </div>
+
+
+  <!-- imagens carrosel -->
+  <section class="carousel-pdp">
+    <div class="slideshow-container">
+
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 3</div>
+        <img src="fotos/Caixa de Ferramentas.png" style="width:100%;height: 450px;">
+
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 3</div>
+        <img src="fotos/Caixa de Ferramentas2.png" style="width:100%;height: 450px;">
+
+      </div>
+
+      <!-- <div class="mySlides fade">
+        <div class="numbertext">3 / 3</div>
+        <img src="fotos/kitferramentas1.jpeg" style="width:100%;height: 450px;">
+      </div> -->
+
+      <!-- <div class="mySlides fade">
+        <div class="numbertext">4 / 4</div>
+        <img src="fotos/kitferramentas1jpeg" style="width:100%;height: 450px;">
+      </div> -->
+
+      <a class="prev" onclick="plusSlides(-1)">❮</a>
+      <a class="next" onclick="plusSlides(1)">❯</a>
+
+    </div>
+    <br>
+
+
+
+    <div style="text-align:left; margin-left: 25%;">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+      <!-- <span class="dot" onclick="currentSlide(4)"></span> -->
+    </div>
+
+    <script>
+      let slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+
+      function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length) { slideIndex = 1 }
+        if (n < 1) { slideIndex = slides.length }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+      }
+    </script>
+  </section>
+
+  <p class="tituloRelacionados-pdp">Produtos Relacionados</p>
+
+  <!-- imagens produtos relacionados -->
+  <section class="relacionados-pdp">
+    <img src="fotos/Bolsa de Ferramentas.png" alt="" class="amostras">
+    <img src="fotos/Kit de Jardinagem.png" alt="" class="amostras">
+    <img src="fotos/Tesoura.png" alt="" class="amostras">
+  </section>
+
+  <script src="botao.js"></script>
+
+  <footer class="rodapé">
+    <div class="footer-box">
+        <p class="footer-txt"> Formas de Pagamento</p>
+        <br>
+        <img src="https://tokstok.vtexassets.com/arquivos/payment-visa.png">
+        <img src="https://tokstok.vtexassets.com/arquivos/payment-master.png">
+        <img src="https://tokstok.vtexassets.com/arquivos/payment-elo.png">
+        <img src="https://tokstok.vtexassets.com/arquivos/payment-diners.png">
+        <img src="https://tokstok.vtexassets.com/arquivos/payment-amex.png">
+    </div>
+    <div class="footer-box">
+    <p class="footer-txt">Siga a UM JARDIM</p>
+    <br>
+    <div class="all-icons">
+        <img src="https://cdn3.iconfinder.com/data/icons/free-social-icons/67/instagram_circle_gray-256.png" class="icon">
+        <img src="https://cdn3.iconfinder.com/data/icons/free-social-icons/67/twitter_circle_gray-256.png" class="icon">
+        <img src="https://cdn3.iconfinder.com/data/icons/free-social-icons/67/facebook_circle_gray-256.png" class="icon">
+    </div>
+    </div>
+    <div class="footer-box">
+        <p class="footer-txt">Fale Conosco</p>
+        <br>
+        <p class="footer-txt2">Telefone: 0800 123 4567
+        </p>
+        <p class="footer-txt2">De Segunda a sábado, das 08h às 20h. Exceto feriados.</p>
+    </div>
+</footer>
+</body>
+</html>

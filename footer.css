@@ -1,5 +1,6 @@
 @media screen and (min-width:414px) {
 footer {
+    font-family: Verdana, sans-serif;
     margin: 0%;
     bottom: 0;
     width: 100%;
@@ -31,6 +32,7 @@ footer {
 }
 @media only screen and (max-width: 413px) {
 footer {
+    font-family: Verdana, sans-serif;
     margin: 0%;
     bottom: 0;
     width: 100%;
