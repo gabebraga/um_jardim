@@ -43,12 +43,56 @@
             <section class="menu-nav">
                 <!-- Menu de Navegação Versão Mobile -->
                 <div class="menuDeNavegação">
-                    <a href="cat_cadeiras.html"><div class="menu-item">Cadeiras</div></a>
-                    <a href="cat_mesas.html"><div class="menu-item">Mesas</div></a>
-                    <a href="cat_plantas.html"><div class="menu-item">Plantas</div></a>
-                    <a href="cat_pool.html"><div class="menu-item">Móveis p/ Piscina</div></a>
-                    <a href="cat_tools.html"><div class="menu-item">Ferramentas</div></a>
-                    <!-- <div class="menu-item">Categoria</div> -->
+                    <div class="dropdown">
+                        <p class="menu-item">Categorias</p>
+                            <div class="dropdown-content">
+                            <a href="cat_cadeiras.html">Cadeiras</a>
+                            <a href="cat_mesas.html">Mesas</a>
+                            <a href="cat_plantas.html">Plantas</a>
+                            <a href="cat_pool.html">Móveis p/ Piscina</a>
+                            <a href="cat_tools.html">Ferramentas</a>
+                            </div>
+                        </div>
+                    <a href="tendencias.html" class="menu-item">Tendencias</a>
+                    <style>
+                    /* The container <div> - needed to position the dropdown content */
+                        .dropdown {
+                          position: relative;
+                          display: inline-block;
+                        }
+                        
+                        /* Dropdown Content (Hidden by Default) */
+                        .dropdown-content {
+                          display: none;
+                          position: absolute;
+                          background-color: #f9f9f9;
+                          min-width: 160px;
+                          box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                          z-index: 1;
+                        }
+                        
+                        /* Links inside the dropdown */
+                        .dropdown-content a {
+                          color: black;
+                          padding: 12px 16px;
+                          text-decoration: none;
+                          display: block;
+                        }
+                        
+                        /* Change color of dropdown links on hover */
+                        .dropdown-content a:hover {background-color: #f1f1f1}
+                        
+                        /* Show the dropdown menu on hover */
+                        .dropdown:hover .dropdown-content {
+                          display: block;
+                        }
+                        
+                        /* Change the background color of the dropdown button when the dropdown content is shown */
+                        .dropdown:hover .dropbtn {
+                          background-color: #3e8e41;
+                        }
+                        </style>
+                    <a href="#contato" class="menu-item" >Contato</a>
                 </div>
                 <!-- Barra Lateral Versão Mobile -->
                 <script src="js/header.js"></script>
@@ -145,7 +189,7 @@
             </section>
 
         </nav>
-        <footer class="rodapé">
+        <footer class="rodapé" id="contato">
             <div class="aa">
                 <p class="footer-txt"> Formas de Pagamento</p>
                 <br>
