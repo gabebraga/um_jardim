@@ -1,0 +1,69 @@
+@media only screen and (max-width:361px) {
+
+    body {
+        background-color: #4e6946;
+        height: 800px;
+    }
+
+    .titulo{
+        padding-top: 25px;
+        font-size: 40px;
+        color: white;
+        font-weight: bold;
+        text-align: center;
+        margin-top: 10%;
+    }
+
+    #cadastro-pg {
+        height: 80%;
+        width: 80%;
+        background-color: #5F8554;
+        margin: auto;
+        margin: 10%;
+        border-radius: 8px;
+    }
+
+    .name {
+        padding-top: 20px;
+        color: white;
+        width: 90%;
+    }
+
+    .div-info {
+        display: block;
+        display: flex;
+        justify-content: center;
+    }
+
+    .div-info,
+    .name {
+        margin: auto;
+        text-align: center;
+    }
+
+    .informações {
+        width: 60%;
+        background-color: white;
+        border-radius: 5px;
+        padding-left: 10px;
+        height: 33px;
+    }
+
+    .div-info img {
+        width: 40px;
+    }
+
+
+    .conta {
+        width: 40%;
+        height: 33px;
+        background-color: #7CAD6E;
+        font-size: 20px;
+        border-style: none;
+        margin: 25px 30%;
+        border-radius: 5px;
+        color: white;
+        font-weight: 400;
+
+    }
+}

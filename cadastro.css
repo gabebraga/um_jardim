@@ -1,0 +1,58 @@
+.sideNav{
+    background-color: #4e6946;
+    text-align: center;
+}
+
+.titulo{
+    padding-top: 25px;
+    font-size: 40px;
+    color: white;
+    font-weight: bold;
+}
+
+.div-info{
+    width: 100%;
+    display: block;
+    display: flex;
+    justify-content: center;
+}
+
+.name{
+    font-size: 30px;
+    color: white;
+    margin-top: 50px ;
+}
+
+.icon{
+    width: 60px;
+    height: 30px;
+}
+
+.informações{
+    width: 75%;
+    background-color: white;
+    border-radius: 5px;
+    padding-left: 10px;
+    height: 33px;
+
+}
+
+#cadastro-pg{
+    width: 80%;
+    margin: auto;
+    background-color: #5f8554;
+    border-radius: 8px;
+}
+
+.conta{
+    width: 40%;
+    height: 33px;
+    background-color: #7CAD6E;
+    font-size: 20px;
+    border-style: none;
+    margin: 33px 0;
+    border-radius: 5px;
+    color: white;
+    font-weight: 400;
+
+}

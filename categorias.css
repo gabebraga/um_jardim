@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+}
+body {
+    background-color: #fafafa;
+}
+#sec_aprod {
+    width: 100%;
+    text-align: center;
+    display: block;
+}
+.prod {
+    margin: 5%;
+    display: inline-block;
+    width: 20%;
+    height: 450px;
+    border-radius: 7px;
+    box-shadow: 0px 0px 2px #bebebe;
+    background-color: white;
+}
+.img_prod {
+    margin-top: 10px;
+    width: 70%;
+   border-radius: 10px; 
+    height: 70%;
+}
+.title_prod{
+    margin-top: 10px;
+    color: rgb(71, 71, 71);
+    font-size: 25px;
+}
+.value_prod{
+    color: rgb(82, 82, 82);
+    font-size: 20px;
+    font-weight: bold;
+}
+.avs_prod{
+    margin-right: 80%;
+    margin-top: 10px;
+    width: 7%;
+}
+.id_prod{
+    margin-right: 60%;
+    font-size: 15px;
+    color: #949494;
+}
