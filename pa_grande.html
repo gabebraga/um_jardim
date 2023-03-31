@@ -17,27 +17,109 @@
   <header>
     <!-- Header Versão Desktop -->
     <section id="header">
-        <a href="index.html"><img src="fotos/logo.png" class="logo" alt=""></a>
+        <a href="index.html" id="logo"><img src="fotos/logo.png" class="logo" alt=""></a>
 
 
-        <input type="search" class="pesquisa" placeholder="Pesquise no site">
-
+        <input type="search" id="pesquisa" class="pesquisa" placeholder="Pesquise no site">
 
         <div id="login">
             <div class="dropdown">
                 <img onclick="myFunction()" class="dropbtn" src="fotos/login.png" alt="" id="img-login"
                     class="login">
                 <div id="myDropdown" class="dropdown-content">
-                    <form action="">
+                    <form action="" id="form">
                         <input type="email" id="inputName" placeholder="Insira seu email">
                         <input type="password" id="inputSenha" placeholder="Insira sua senha"> <br>
                         <button value="submit" id="buttonEntrar">Entrar</button>
                     </form>
-                    ou
-                    <a href="login.html">Faça Seu Cadastro :)</a>
+                    <p id="ou">ou</p>
+                    <section id="cadastros">
+                        <div id="mySidenav" class="sidenav">
+                            <a href="javascript:void(0)" class="closebtn" onclick="closeCadastro()">&times;</a>
+                            <section id="cadastro-pg">
+                                <form method="post" action="enviar.php" name="cadastro">
+                        
+                                    <p class="titulo">Faça seu Cadastro!</p>
+                                    <div class="name">
+                                        Email
+                                    </div>
+                                    <div class="div-info">
+                                        <img src="fotos/emailCadastro.png" alt="" class="icon">
+                                        <input type="email" class="informações" name="email"
+                                            placeholder="Insira seu email" required>
+                                    </div>
+                                    <div class="name">
+                                        CPF
+                                    </div>
+                                    <div class="div-info">
+                                        <img src="fotos/emailCadastro.png" alt="" class="icon">
+                                        <input type="number" class="informações" name="cpf"
+                                            placeholder="Insira seu cpf" required>
+                                    </div>
+                                    <div class="name">
+                                        Nome
+                                    </div>
+                                    <div class="div-info">
+                                        <img src="fotos/emailCadastro.png" alt="" class="icon">
+                                        <input type="text" class="informações" name="nome"
+                                            placeholder="Insira seu nome" required>
+                                    </div>
+                                    <div class="name">
+                                        Telefone
+                                    </div>
+                                    <div class="div-info">
+                                        <img src="fotos/emailCadastro.png" alt="" class="icon">
+                                        <input type="tel" class="informações" name="tel"
+                                            placeholder="Insira seu telefone" required>
+                                    </div>
+                                    <div class="name">
+                                        Senha
+                                    </div>
+                                    <div class="div-info">
+                                        <img src="fotos/emailCadastro.png" alt="" class="icon">
+                                        <input type="password" class="informações" name="senha"
+                                            placeholder="Insira uma senha" required>
+                                    </div>
+                                    <div class="name">
+                                        Confirme sua senha
+                                    </div>
+                                    <div class="div-info">
+                                        <img src="fotos/emailCadastro.png" alt="" class="icon">
+                                        <input type="password" class="informações" name="confirm_senha"
+                                            placeholder="Confirme sua senha" required>
+                                    </div>
+                                    <button type="submit" class="conta">Criar Conta</button>
+                                </form>
+                            </section>
+                        </div>
+
+                        <div id="main">
+                            <span style="font-size:30px;cursor:pointer"
+                                onclick="openCadastro()">Cadastre-se</span>
+                        </div>
+                    </section>
                 </div>
             </div>
-            <!-- <script src="header.js"></script> -->
+    </section>
+    <!-- Barra Lateral Versão Mobile -->
+    <section class="sidebar-all">
+        <div id="mySidepanel" class="sidepanel">
+            <img src="fotos/login2.png" class="login2" alt="">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <form action="">
+                <table>
+                    <input type="email" placeholder="Insira seu email" class="input-sidebar">
+                    <input type="password" placeholder="Insira sua senha" class="input-sidebar">
+                    <button value="submit" class="button-sidebar">Entrar</button>
+                </table>
+            </form>
+            <p style="color:white;">OU</p>
+            <button class="botao-cadastrar">Cadastre-se</button>
+        </div>
+        <div>
+            <button class="openbtn" onclick="openNav()">&#9776; </button>
+        </div>
+
     </section>
     <!-- Menu de Navegação -->
     <section class="menu-nav">
@@ -94,11 +176,9 @@
                 </style>
             <a href="#contato" class="menu-item" >Contato</a>
         </div>
-        <!-- Barra Lateral Versão Mobile -->
         <script src="js/header.js"></script>
     </section>
 </header>
-
   <!-- informações sobre o produto -->
   <div class="informações-pdp">
     <p class="titulo-pdp">Pá de jardinagem Grande</p>

@@ -4,128 +4,66 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="login.css">
     <title>Document</title>
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/header.css">
-    <script src="js/header.js"></script>
-    <link rel="stylesheet" href="css/login.css">
-    <link rel="stylesheet" href="css/footer.css">
-    <script src="js/login.js"></script>
 </head>
 <body>
-    <header>
-        <!-- Header Versão Desktop -->
-        <section id="header">
-            <a href="index.html"><img src="fotos/logo.png" class="logo" alt=""></a>
+    <section id="cadastro-pg">
+        <form method="post" action="enviar.php" name="cadastro">
 
-
-            <input type="search" class="pesquisa" placeholder="Pesquise no site">
-
-
-            <div id="login">
-                <div class="dropdown">
-                    <img onclick="myFunction()" class="dropbtn" src="fotos/login.png" alt="" id="img-login"
-                        class="login">
-                    <div id="myDropdown" class="dropdown-content">
-                        <form action="">
-                            <input type="email" id="inputName" placeholder="Insira seu email">
-                            <input type="password" id="inputSenha" placeholder="Insira sua senha"> <br>
-                            <button value="submit" id="buttonEntrar">Entrar :)</button>
-                        </form>
-                        ou
-                        <a href="login.html">Faça Seu Cadastro :)</a>
-                    </div>
-                </div>
-                <script src="js/botao.js"></script>
-        </section>
-        <!-- Menu de Navegação -->
-        <section class="menu-nav">
-            <!-- Menu de Navegação Versão Mobile -->
-            <div class="menuDeNavegação">
-                <a href="cat_cadeiras.html"><div class="menu-item">Cadeiras</div></a>
-                <a href="cat_mesas.html"><div class="menu-item">Mesas</div></a>
-                <a href="cat_plantas.html"><div class="menu-item">Plantas</div></a>
-                <a href="cat_pool.html"><div class="menu-item">Móveis p/ Piscina</div></a>
-                <a href="cat_tools.html"><div class="menu-item">Ferramentas</div></a>
-                <!-- <div class="menu-item">Categoria</div> -->
+            <p class="titulo">Faça seu Cadastro!</p>
+            <div class="name">
+                Email
             </div>
-            <!-- Barra Lateral Versão Mobile -->
-            <script src="js/header.js"></script>
-        </section>
-    </header>
-<section class="all_forms">
-    <div>
-    <form method="post" action="php/enviar.php" name="cadastro" >
-    <table class="b">
-        <tr>
-            <td  class="m1">E-mail</td>
-        </tr>
-        <tr>
-            <td><input type="email" class="m3" name="email" required></td>
-        </tr>
-        <tr>
-            <td  class="m1">CPF</td>
-        </tr>
-        <tr>
-            <td><input type="text" class="m3" name="cpf" required></td>
-        </tr>
-        <tr>
-            <td  class="m1">Nome</td>
-        </tr>
-        <tr>
-            <td><input type="text" class="m3" name="nome" required></td>
-        </tr>
-        <tr>
-            <td  class="m1">Telefone</td>
-        </tr>
-        <tr>
-            <td><input type="tel" class="m3" name="tel" required></td>
-        </tr>
-        <tr>
-            <td  class="m1">Senha</td>
-        </tr>
-        <tr>
-            <td><input type="password" class="m3" name="senha" required></td>
-        </tr>
-        <tr>
-            <td  class="m1">Confirme a Senha</td>
-        </tr>
-        <tr>
-            <td><input type="password" class="m3" name="confirm_senha" required></td>
-        </tr>
-        <tr>
-            <td><button class="m4" type="submit">Criar conta</button></td>
-        </tr>
-    </table>
-    </form>
-</div>
-</section>
-     <footer class="rodapé">
-        <div class="aa">
-            <p class="footer-txt"> Formas de Pagamento</p>
-            <br>
-            <img src="https://tokstok.vtexassets.com/arquivos/payment-visa.png">
-            <img src="https://tokstok.vtexassets.com/arquivos/payment-master.png">
-            <img src="https://tokstok.vtexassets.com/arquivos/payment-elo.png">
-            <img src="https://tokstok.vtexassets.com/arquivos/payment-diners.png">
-            <img src="https://tokstok.vtexassets.com/arquivos/payment-amex.png">
-        </div>
-        <div class="ab">
-        <p class="footer-txt">Siga a UM JARDIM</p>
-        <br>
-        <div class="all-icons">
-            <img src="https://cdn3.iconfinder.com/data/icons/free-social-icons/67/instagram_circle_gray-256.png" class="icon">
-            <img src="https://cdn3.iconfinder.com/data/icons/free-social-icons/67/twitter_circle_gray-256.png" class="icon">
-            <img src="https://cdn3.iconfinder.com/data/icons/free-social-icons/67/facebook_circle_gray-256.png" class="icon">
-        </div>
-        </div>
-        <div class="ac">
-            <p class="footer-txt">Fale Conosco</p>
-            <br>
-            <p class="footer-txt2">Telefone: 0800 123 4567
-            </p>
-            <p class="footer-txt2">De Segunda a sábado, das 08h às 20h. Exceto feriados.</p>
-        </div>
-    </footer>
+            <div class="div-info">
+                <img src="fotos/emailCadastro.png" alt="" class="icon">
+                <input type="email" class="informações" name="email"
+                    placeholder="Insira seu email" required>
+            </div>
+            <div class="name">
+                CPF
+            </div>
+            <div class="div-info">
+                <img src="fotos/emailCadastro.png" alt="" class="icon">
+                <input type="number" class="informações" name="cpf"
+                    placeholder="Insira seu cpf" required>
+            </div>
+            <div class="name">
+                Nome
+            </div>
+            <div class="div-info">
+                <img src="fotos/emailCadastro.png" alt="" class="icon">
+                <input type="text" class="informações" name="nome"
+                    placeholder="Insira seu nome" required>
+            </div>
+            <div class="name">
+                Telefone
+            </div>
+            <div class="div-info">
+                <img src="fotos/emailCadastro.png" alt="" class="icon">
+                <input type="tel" class="informações" name="tel"
+                    placeholder="Insira seu telefone" required>
+            </div>
+            <div class="name">
+                Senha
+            </div>
+            <div class="div-info">
+                <img src="fotos/emailCadastro.png" alt="" class="icon">
+                <input type="password" class="informações" name="senha"
+                    placeholder="Insira uma senha" required>
+            </div>
+            <div class="name">
+                Confirme sua senha
+            </div>
+            <div class="div-info">
+                <img src="fotos/emailCadastro.png" alt="" class="icon">
+                <input type="password" class="informações" name="confirm_senha"
+                    placeholder="Confirme sua senha" required>
+            </div>
+            <button type="submit" class="conta">Criar Conta</button>
+        </form>
+    </section>
+    <!-- <script src="header.js"></script> -->
 </body>
 </html>

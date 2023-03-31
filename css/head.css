@@ -48,58 +48,16 @@
         justify-content: space-around;
         align-items: center;
     }
-
-    .menu-item {
+    .menu-item{
         color: white;
     }
-
-    .menuDeNavegação a {
+    .menuDeNavegação a{
         text-decoration: #ffffff;
     }
 
     .sidebar-all {
         display: none;
     }
-
-    .sidenav {
-        height: 100%;
-        width:0;
-        position: fixed;
-        z-index: 1;
-        top: 0;
-        right: 0;
-        background-color: #4e6946;
-        overflow-x: hidden;
-        transition: 0.5s;
-        padding-top: 60px;
-    }
-
-    /* .sidenav a {
-        padding: 8px 8px 8px 32px;
-        text-decoration: none;
-        font-size: 25px;
-        color: #818181;
-        display: block;
-        transition: 0.3s;
-      } */
-
-    /* .sidenav a:hover {
-        color: #f1f1f1;
-      } */
-
-    .sidenav .closebtn {
-        position: absolute;
-        top: 0;
-        left: 5px;
-        font-size: 36px;
-        margin-left: 50px;
-    }
-
-    #main {
-        transition: margin-left .75s;
-        padding: 16px;
-    }
-
 
     /* Dropdown Button */
     .dropbtn {
@@ -120,7 +78,7 @@
     .dropdown {
         position: relative;
         display: inline-block;
-        margin-right: 45px;
+        margin-right:45px;
     }
 
     /* Dropdown Content (Hidden by Default) */
@@ -175,9 +133,7 @@
     margin-bottom: 6px;
 }
 
-#gambiarra{
-    display: none;
-}
+
 
 @media only screen and (max-width: 413px) {
     * {
@@ -289,7 +245,6 @@
         height: 28px;
         font-size: 15px;
         background-color: #7cad6e;
-        color: white;
     }
 
     #cadastro-sidebar {
@@ -314,57 +269,4 @@
         color: #313131;
     }
 
-    .mySideRegister {
-        display: none;
-    }
-
-    .sidenav {
-        height: 100%;
-        width:0;
-        position: fixed;
-        z-index: 1;
-        top: 0;
-        right: 0;
-        background-color: #4e6946;
-        overflow-x: hidden;
-        transition: 0.5s;
-        padding-top: 60px;
-    }
-
-    /* .sidenav a {
-        padding: 8px 8px 8px 32px;
-        text-decoration: none;
-        font-size: 25px;
-        color: #818181;
-        display: block;
-        transition: 0.3s;
-      } */
-
-    /* .sidenav a:hover {
-        color: #f1f1f1;
-      } */
-
-    .sidenav .closebtn {
-        position: absolute;
-        top: 0;
-        left: 5px;
-        font-size: 36px;
-        margin-left: 50px;
-    }
-
-    #main {
-        transition: margin-left .75s;
-        padding: 16px;
-    }
-
-    .botao-cadastrar{
-        width: 80%;
-        margin: 30px auto;
-        height: 40px;
-        border-style: none;
-        font-size: 20px;
-        color: white;
-        background-color: #7cad6e;
-        border-radius: 3px;
-    }
 }
